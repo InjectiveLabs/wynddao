@@ -1,17 +1,17 @@
 [package]
-name = "wynd-utils"
-version = "0.4.1"
-authors = ["Cosmorama <cosmorama@proton.me>"]
-license = "Apache-2.0"
+authors     = [ "Cosmorama <cosmorama@proton.me>", "Markus Waas <markus@injectivelabs.org>" ]
 description = "Utility functions used by multiple Wynd contracts"
-edition = "2018"
+edition     = "2018"
+license     = "Apache-2.0"
+name        = "wynd-utils-inj"
+version     = "0.4.1-inj"
 
 [dependencies]
-cosmwasm-std = { version = "1.0.0-beta7" }
-schemars = "0.8.1"
-serde = { version = "1.0.103", default-features = false, features = ["derive"] }
-thiserror = { version = "1.0.21" }
+cosmwasm-std = { version = "^2.1.0" }
+schemars     = "0.8.1"
+serde        = { version = "1.0.103", default-features = false, features = [ "derive" ] }
+thiserror    = { version = "1.0.21" }
 
 [dev-dependencies]
 cw-storage-plus = { version = "0.13.1" }
-prost = "0.9"
+prost           = "0.9"
